@@ -5,7 +5,7 @@
 <template>
   <v-container>
     <v-carousel
-        height="752"
+        height="500"
         cycle
         hide-delimiters
         class="mt-15"
@@ -18,8 +18,114 @@
             <v-row>
               <v-col cols="7" class="position-static">
                 <v-sheet class="bg-black position-absolute top-[10px] left-[40px] ml-auto font-italic font-weight-bold">
-                  <p style="font-size: 170px; color: white; background: transparent;">ELEGANCE</p>
-                  <p style="z-index: 10; font-size: 170px; color: white; background: transparent;">AND RHYTHM</p>
+                  <p style="line-height: 70px; font-size: 100px; color: white; background: transparent;">ELEGANCE</p>
+                  <p style="text-indent: 70px; font-size: 100px; color: white; background: transparent; position: relative;">
+                    <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 60px; left: 40px;">
+                    <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 20px; left: 65px;">
+                    AND RHYTHM
+                  </p>
+                  <v-sheet
+                      width="400"
+                      class="position-absolute bg-black"
+                  >
+                    <p style="font-style: italic; font-family: sans-serif; line-height: 30px; position: absolute; left: 70px; top: 80px;">
+                      Найдите для себя время. <br/>
+                      Потанцуйте. Это так оживляет, <br/>
+                      вдохновляет и захватывает! <br/>
+                      Когда ты танцуешь — ты живёшь!</p>
+                    <v-btn
+                        style="top: 220px; left: 70px;"
+                        rounded="md"
+                        color="#FF9F04"
+                        position="absolute"
+                        text="записаться на занятие"></v-btn>
+                    <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 190px; left: 370px;">
+                    <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 210px; left: 330px;">
+
+                  </v-sheet>
+
+                </v-sheet>
+              </v-col>
+              <v-col cols="5" class="position-static">
+                <v-img
+                    height="470"
+                    style="bottom: 0; right: 0;"
+                    src="@/assets/image 8.png"
+                ></v-img>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-sheet>
+      </v-carousel-item>
+      <v-carousel-item
+      >
+        <v-sheet
+        >
+          <v-container fluid class="bg-black">
+            <v-row>
+              <v-col cols="12" class="position-static">
+                <v-sheet class="bg-black position-absolute top-[10px] left-[40px] ml-auto font-italic font-weight-bold">
+                  <p style="text-indent: 70px; line-height: 110px; font-size: 100px; color: white; background: transparent;">WELCOME</p>
+                  <p style="text-indent: 70px; line-height: 110px; font-size: 100px; color: white; background: transparent;">TO <span style="color: #d5880a;">FRESH</span></p>
+                  <v-sheet
+                      width="400"
+                      class="position-absolute bg-black"
+                  >
+                    <p style="font-style: italic; font-family: sans-serif; line-height: 30px; position: absolute; left: 70px; top: 100px;">
+                      Студия современных танцев для <br/>
+                      детей и взрослых. С нами твое <br/>
+                      сердце будет биться чаще</p>
+                    <v-btn
+                        style="top: 200px; left: 70px;"
+                        rounded="md"
+                        color="#FF9F04"
+                        position="absolute"
+                        text="записаться на занятие"></v-btn>
+                  </v-sheet>
+
+                </v-sheet>
+              </v-col>
+              <v-col cols="5" class="position-static">
+                <v-img
+                    style="position:absolute; bottom: 0; right: 0;"
+                    width="470"
+                    src="@/assets/image7.svg"
+                ></v-img>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-sheet>
+      </v-carousel-item>
+      <v-carousel-item
+      >
+        <v-sheet
+        >
+          <v-container fluid class="bg-black">
+            <v-row>
+              <v-col cols="7" class="position-static">
+                <v-sheet class="bg-black position-absolute top-[10px] left-[40px] ml-auto font-italic font-weight-bold">
+                  <p style="line-height: 70px; font-size: 100px; color: white; background: transparent;">ELEGANCE</p>
+                  <p style="text-indent: 70px; font-size: 100px; color: white; background: transparent; position: relative;">
+                     AND RHYTHM
+                  </p>
+                  <v-sheet
+                      width="400"
+                      class="position-absolute bg-black"
+                  >
+                    <p style="font-style: italic; font-family: sans-serif; line-height: 30px; position: absolute; left: 70px; top: 80px;">
+                      Найдите для себя время. <br/>
+                      Потанцуйте. Это так оживляет, <br/>
+                      вдохновляет и захватывает! <br/>
+                      Когда ты танцуешь — ты живёшь!</p>
+                    <v-btn
+                        style="top: 220px; left: 70px;"
+                        rounded="md"
+                        color="#FF9F04"
+                        position="absolute"
+                        text="записаться на занятие"></v-btn>
+
+                  </v-sheet>
+
                 </v-sheet>
               </v-col>
               <v-col cols="5" class="d-flex justify-center align-center">
@@ -34,31 +140,6 @@
         </v-sheet>
       </v-carousel-item>
 
-      <v-carousel-item
-      >
-        <v-sheet
-            height="100%"
-        >
-          <div class="d-flex fill-height justify-center align-center bg-black">
-            <div class="text-h2">
-              Slide 2
-            </div>
-          </div>
-        </v-sheet>
-      </v-carousel-item>
-
-      <v-carousel-item
-      >
-        <v-sheet
-            height="100%"
-        >
-          <div class="d-flex fill-height justify-center align-center bg-black">
-            <div class="text-h2">
-              Slide 3
-            </div>
-          </div>
-        </v-sheet>
-      </v-carousel-item>
     </v-carousel>
   </v-container>
 

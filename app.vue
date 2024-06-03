@@ -1,5 +1,15 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage/>
   </NuxtLayout>
 </template>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body{
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<script setup lang="ts">
+</script>

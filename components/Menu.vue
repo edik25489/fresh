@@ -20,7 +20,7 @@
       <template v-slot:default>
         <v-spacer></v-spacer>
         <v-btn>РАСПИСАНИЕ</v-btn>
-        <v-btn>СОБЫТИЯ</v-btn>
+        <v-btn href="#gallery">СОБЫТИЯ</v-btn>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
       </template>

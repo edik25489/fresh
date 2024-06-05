@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+const dialog = ref(false)
 </script>
 
 <template>
@@ -38,6 +38,7 @@
                         rounded="md"
                         color="#FF9F04"
                         position="absolute"
+                        @click="dialog = true"
                         text="записаться на занятие"></v-btn>
                     <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 190px; left: 370px;">
                     <img src="@/assets/Star.svg" alt="" style="height: 60px; position: absolute; top: 210px; left: 330px;">
@@ -80,6 +81,7 @@
                         rounded="md"
                         color="#FF9F04"
                         position="absolute"
+                        @click="dialog = true"
                         text="записаться на занятие"></v-btn>
                   </v-sheet>
 
@@ -142,13 +144,55 @@
                   rounded="md"
                   color="#FF9F04"
                   position="absolute"
+                  @click="dialog = true"
                   text="записаться на занятие"></v-btn>
             </v-row>
           </v-container>
         </v-sheet>
       </v-carousel-item>
-
     </v-carousel>
+
+    <v-dialog
+        v-model="dialog"
+        width="auto"
+        class="bg-black"
+    >
+      <v-card
+          width="600"
+          color="black"
+          class="bg-black"
+      >
+        <template v-slot:title>
+          <p style="font-size: 50px;">ХОЧУ ВО FRESH</p>
+        </template>
+        <template v-slot:text>
+          <v-text-field
+              label="ФИО РОДИТЕЛЯ"
+              required
+          ></v-text-field>
+          <v-text-field
+              label="ФИО РЕБЕНКА"
+              required
+          ></v-text-field>
+          <v-text-field
+              label="НОМЕР ТЕЛЕФОНА"
+              required
+          ></v-text-field>
+        </template>
+        <template v-slot:actions>
+          <v-btn
+              class="px-14"
+              text="оставить заявку"
+              color="#FF9F04"
+              variant="flat"
+              @click="dialog = false"
+          >
+            <span style="color: #FEFDFD">оставить заявку</span>
+          </v-btn>
+        </template>
+      </v-card>
+    </v-dialog>
+
   </v-container>
 
 </template>

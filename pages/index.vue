@@ -15,6 +15,7 @@ import Contact from "~/components/Contact.vue";
     <Price/>
   <Galery/>
   <Contact/>
+
 </template>
 
 <style scoped>

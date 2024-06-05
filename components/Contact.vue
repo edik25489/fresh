@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+const dialog = ref(false)
 </script>
 
 <template>
@@ -32,12 +32,53 @@
             class="px-7 ma-2"
             style="color: white;"
             rounded="md"
+            @click="dialog = true"
             color="#FF9F04"
             text="записаться на занятие"></v-btn>
       </v-sheet>
     </v-col>
   </v-row>
 </v-container>
+  <v-dialog
+      v-model="dialog"
+      width="auto"
+      class="bg-black"
+  >
+    <v-card
+        width="600"
+        color="black"
+        class="bg-black"
+    >
+      <template v-slot:title>
+        <p style="font-size: 50px;">ХОЧУ ВО FRESH</p>
+      </template>
+      <template v-slot:text>
+        <v-text-field
+            label="ФИО РОДИТЕЛЯ"
+            required
+        ></v-text-field>
+        <v-text-field
+            label="ФИО РЕБЕНКА"
+            required
+        ></v-text-field>
+        <v-text-field
+            label="НОМЕР ТЕЛЕФОНА"
+            required
+        ></v-text-field>
+      </template>
+      <template v-slot:actions>
+        <v-btn
+            class="px-14"
+            text="оставить заявку"
+            color="#FF9F04"
+            variant="flat"
+            @click="dialog = false"
+        >
+          <span style="color: #FEFDFD">оставить заявку</span>
+        </v-btn>
+      </template>
+    </v-card>
+  </v-dialog>
 </template>
 
 <style scoped>

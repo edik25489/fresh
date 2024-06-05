@@ -2,14 +2,13 @@
 
 import Carousel from "~/components/Carousel.vue";
 import About from "~/components/About.vue";
+import Group from "~/components/Group.vue";
 </script>
 
 <template>
-  <v-container>
     <Carousel/>
     <About/>
-  </v-container>
-
+    <Group/>
 </template>
 
 <style scoped>

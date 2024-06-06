@@ -3,6 +3,7 @@
 </script>
 
 <template>
+
 <v-container>
   <v-sheet
       style="font-size: 50px;"
@@ -12,46 +13,57 @@
   <v-sheet class="bg-black">
     <v-row no-gutters>
       <v-col cols="4">
-        <NuxtLink>
+
           <v-hover  v-slot="{ isHovering, props }" close-delay="100">
             <v-sheet
                 v-bind="props"
                 :class="{ 'on-hover': isHovering, 'text-black': isHovering, 'text-white': !isHovering }"
                 :color="isHovering ? 'orange-darken-2' : 'black'"
                 class="d-flex align-center justify-center my-5"
-                style="background-color: transparent; border: 2px white solid; height: 200px; font-size: 50px;">
-              СТРЕТЧИНГ
+                style="background-color: transparent; border: 2px white solid; height: 200px;">
+              <v-btn
+                  variant="text"
+                  style="height: 200px; font-size: 50px;"
+                  to="/frame18"
+              > СТРЕТЧИНГ</v-btn>
+
             </v-sheet>
           </v-hover>
-        </NuxtLink>
 
-        <NuxtLink>
+
           <v-hover  v-slot="{ isHovering, props }" close-delay="100">
           <v-sheet
               v-bind="props"
               :class="{ 'on-hover': isHovering, 'text-black': isHovering, 'text-white': !isHovering }"
               :color="isHovering ? 'orange-darken-2' : 'black'"
               class="d-flex align-center justify-center my-5"
-              style="background-color: transparent; border: 2px white solid; height: 200px; color: white; font-size: 30px;">
-            ФИТНЕС-ТАНЦЫ
+              style="background-color: transparent; border: 2px white solid; height: 200px;">
+            <v-btn
+                variant="text"
+                style="height: 200px; font-size: 30px;"
+                to="/frame19"
+            > ФИТНЕС-ТАНЦЫ</v-btn>
           </v-sheet>
           </v-hover>
-        </NuxtLink>
       </v-col>
       <v-col cols="4">
-        <NuxtLink>
+
           <v-hover  v-slot="{ isHovering, props }" close-delay="100">
           <v-sheet
               v-bind="props"
               :class="{ 'on-hover': isHovering, 'text-black': isHovering, 'text-white': !isHovering }"
               :color="isHovering ? 'orange-darken-2' : 'black'"
               class="d-flex align-center justify-center ma-5"
-              style="background-color: transparent; border: 2px white solid; height: 250px; color: white; font-size: 50px;">
-            16+
+              style="background-color: transparent; border: 2px white solid; height: 250px;">
+            <v-btn
+                variant="text"
+                style="height: 250px; font-size: 50px;"
+                to="/FRAME20"
+            >16+</v-btn>
           </v-sheet>
           </v-hover>
-        </NuxtLink>
-        <NuxtLink>
+
+
           <v-hover  v-slot="{ isHovering, props }" close-delay="100">
           <v-sheet
               v-bind="props"
@@ -62,10 +74,10 @@
             ЛАТИНА
           </v-sheet>
           </v-hover>
-        </NuxtLink>
+
       </v-col>
       <v-col cols="4">
-        <NuxtLink>
+
           <v-hover  v-slot="{ isHovering, props }" close-delay="100">
           <v-sheet
               v-bind="props"
@@ -76,11 +88,11 @@
             БРЕЙК
           </v-sheet>
           </v-hover>
-        </NuxtLink>
+
         <v-row>
 
           <v-col cols="6">
-            <NuxtLink>
+
             <v-hover  v-slot="{ isHovering, props }" close-delay="100">
               <v-sheet
                   v-bind="props"
@@ -91,10 +103,10 @@
                 3+
               </v-sheet>
             </v-hover>
-            </NuxtLink>
+
           </v-col>
           <v-col cols="6">
-            <NuxtLink>
+
               <v-hover  v-slot="{ isHovering, props }" close-delay="100">
                 <v-sheet
                     v-bind="props"
@@ -105,7 +117,7 @@
                   6+
                 </v-sheet>
               </v-hover>
-            </NuxtLink>
+
           </v-col>
         </v-row>
 

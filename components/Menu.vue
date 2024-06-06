@@ -9,12 +9,15 @@
         flat
     >
       <template v-slot:prepend>
-        <v-img
-            :width="100"
-            aspect-ratio="16/9"
-            cover
-            src="@/assets/logo.svg"
-        ></v-img>
+        <v-btn to="/">
+          <v-img
+              :width="100"
+              aspect-ratio="16/9"
+              cover
+              src="@/assets/logo.svg"
+          ></v-img>
+        </v-btn>
+
       </template>
 
       <template v-slot:default>

@@ -22,7 +22,7 @@
 
       <template v-slot:default>
         <v-spacer></v-spacer>
-        <v-btn>РАСПИСАНИЕ</v-btn>
+        <v-btn href="/frame25">РАСПИСАНИЕ</v-btn>
         <v-btn href="#gallery">СОБЫТИЯ</v-btn>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
